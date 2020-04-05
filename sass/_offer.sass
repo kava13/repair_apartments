@@ -1,0 +1,41 @@
+.offer
+    background: url('../img/room-3.jpg')
+    background-repeat: no-repeat
+    background-position: center right
+    position: relative
+ 
+    &:before
+        content: ''
+        width: 50%
+        height: 100%
+        position: absolute  
+        background-color: white
+        top: 0
+        left: 0    
+    &-block
+        width: 50%
+        padding-right: 90px
+        position: relative
+    &__title
+        max-width: 360px
+        line-height: 35px
+        margin-bottom: 24px
+        +bold
+    &__subtitle
+        display: block
+        max-width: 250px
+        margin-bottom: 30px
+    &__input
+        width: 240px
+        margin-bottom: 30px
+        &:first-child
+            margin-right: 10px
+    &__button
+        width: 100%
+        min-height: 70px
+
+@media (max-width:  1200px)
+    .offer
+        &__input
+            width: 100%
+    

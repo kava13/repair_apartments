@@ -1,0 +1,53 @@
+@import 'colors'
+@import 'fonts'    
+
+*
+    box-sizing: border-box
+    
+body
+    font-family: 'Museo Sans 300 Light', sans-serif
+
+        
+.container
+    margin: auto
+    max-width: 1170px
+@media (max-width: 1200px)
+    .container
+        width: 760px
+@media (max-width: 768px)
+
+    .container
+        width: 580px
+        width: 90%
+
+
+
+
+.button
+    background-color: $main-color
+    border: none
+    border-radius: 10px
+    padding: 18px 30px
+    +bold
+    &:hover
+        background-color: lighten($main-color, 10%)
+        cursor: pointer
+
+button, 
+button:active, 
+button:focus,
+input
+    outline: none
+
+        
+.section 
+    padding: 90px 0
+    &-title
+        font-size: 24px
+    &-subtitle
+        font-size: 16px
+
+input
+    border: 1px solid $border-input
+    padding: 20px 26px
+    border-radius: 10px
