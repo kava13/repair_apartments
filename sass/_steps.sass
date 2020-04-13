@@ -1,0 +1,72 @@
+.steps
+    &__title
+        margin: auto;
+        max-width: 644px
+        font-size: 30px
+        text-align: center
+        line-height: 45px
+        margin-bottom: 59px
+    &__subtitle
+        font-size: 20px
+        line-height: 45px
+        display: block
+        margin: auto
+        text-align: center
+        margin-bottom: 59px
+    &-block
+        display: flex
+        justify-content: space-around
+    &__text
+        max-width: 136px
+        text-align: center
+        font-size: 14px
+        display: block
+        margin-top: 30px
+    
+.step__image
+    width: 100px
+    height: 100px
+    border: 3px solid #ffd200
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    margin: auto
+    
+.step
+    position: relative
+    &:not(:last-child)::after
+        content: ''
+        position: absolute
+        background: url('../img/steps/arrow_curved.png')
+        width: 72px
+        height: 25px
+        background-repeat: no-repeat
+        bottom: 200px
+        left: 155px
+
+@media ( max-width: 1200px )
+    .steps
+        &-block
+            justify-content: space-between
+            flex-wrap: wrap
+        &__text
+            font-size: 14px
+            margin: auto
+    .step
+        flex-basis: 50%
+        margin-bottom: 30px
+        &:not(:last-child)::after
+            display: none
+        &__image
+            margin-bottom: 15px
+        &:last-child
+            margin: auto
+
+
+@media ( max-width: 768px )
+    .steps
+        &-block
+            flex-direction: column
+        &__text
+            margin: auto

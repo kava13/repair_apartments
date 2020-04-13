@@ -20,6 +20,7 @@
         max-width: 360px
         line-height: 35px
         margin-bottom: 24px
+        text-align: left
         +bold
     &__subtitle
         display: block
@@ -36,6 +37,19 @@
 
 @media (max-width:  1200px)
     .offer
+        &__title
+            margin-top: 0px
         &__input
             width: 100%
+            margin-bottom: 10px
+        &__button
+            font-size: 13px
+
+
+@media (max-width:  768px)
+    .offer
+        background: #fff
+        &-block
+            width: 100%
+            padding-right: 0
     

@@ -1,0 +1,72 @@
+@import 'colors'
+
+.features
+    &-text
+        background-color: #ffc000
+        padding: 100px
+        display: flex
+        align-items: center
+        margin-bottom: 100px
+    &__title
+        margin: auto
+        text-align: center
+        font-size: 32px
+        line-height: 50px
+        max-width: 907px
+    &-wrap
+        display: flex
+        justify-content: space-between
+        &__item
+            overflow: hidden
+            position: relative
+            width: 300px
+            height: 370px
+            background: #f7f7f7 url(https://i.ibb.co/dQcx9nK/2.png) no-repeat center bottom / contain;
+        &__text
+            height: 133px
+            padding: 27px 26px
+            font-size: 16px
+            font-weight: 400
+            line-height: 23px
+
+.i1
+    position: absolute
+    bottom: -4px
+    left: 0
+
+
+.i2
+    position: absolute
+    bottom: 0
+    left: 0
+            
+@media ( max-width: 1200px )
+    .features
+        &__title
+            max-width: 730px
+        &-wrap
+            &__item
+                overflow: hidden
+                position: relative
+                width: 230px
+                height: 350px
+@media ( max-width: 768px )
+    .features
+        &-text
+            padding: 70px
+            margin-bottom: 50px
+        &__title
+            line-height: 21px
+            font-size: 18px
+        &-wrap
+            flex-direction: column
+            &__item
+                width: 272px
+                height: 300px
+                margin-bottom: 30px
+                margin: auto
+                margin-bottom: 28px
+            &__text
+                padding: 19px 
+                font-size: 15px
+                font-weight: 400

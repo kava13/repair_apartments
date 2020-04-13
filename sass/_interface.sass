@@ -7,27 +7,19 @@
 body
     font-family: 'Museo Sans 300 Light', sans-serif
 
+img
+    max-width: 100%
+
         
 .container
-    margin: auto
+    margin: 0 auto
     max-width: 1170px
-@media (max-width: 1200px)
-    .container
-        width: 760px
-@media (max-width: 768px)
-
-    .container
-        width: 580px
-        width: 90%
-
-
 
 
 .button
     background-color: $main-color
     border: none
     border-radius: 10px
-    padding: 18px 30px
     +bold
     &:hover
         background-color: lighten($main-color, 10%)
@@ -41,13 +33,33 @@ input
 
         
 .section 
-    padding: 90px 0
+    padding: 90px 0px
     &-title
         font-size: 24px
+        text-align: center
     &-subtitle
         font-size: 16px
+
+
 
 input
     border: 1px solid $border-input
     padding: 20px 26px
     border-radius: 10px
+    &:focus
+        border: 1px solid $main-color
+
+.arrow
+    &-left, &-right
+        cursor: pointer
+
+@media ( max-width: 1200px )
+    .container
+        max-width: 800px
+        width: 95%
+    .section 
+        padding: 45px 0px
+@media ( max-width: 768px )
+    .container
+        max-width: 580px
+        width: 90%

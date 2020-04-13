@@ -1,13 +1,10 @@
-@import 'colors'    
-@import 'fonts'
-
 .hero
     background-color: $secondary
     &-block
         display: flex
     &-text
         flex-basis: 50%
-        padding-right: 139px
+        padding-right: 100px
         &__title
             font-size: 39px
             line-height: 55px
@@ -52,11 +49,26 @@
     .hero
         &-block
             flex-direction: column
+        &-list
+            margin-bottom: 44px
         &-text
             padding: 0
-            margin-left: 30px
+@media  (max-width: 768px)
+    .hero
+        &-text
             &__title
-                text-align: center
+                font-size: 24px
+                line-height: 1.4
+                margin-bottom: 15px
+                margin-top: 0px
             &__subtitle
-                display: block
-                text-align: center
+                font-size: 16px
+                margin-bottom: 28px
+        &-list
+            &__item
+                margin-bottom: 20px
+            &__text
+                font-size: 12px
+            &__image
+                margin-right: 15px
+

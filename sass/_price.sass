@@ -7,8 +7,10 @@
         text-align: center
         margin-bottom: 58px
     &__subtitle
-        margin-bottom: 59px
+        margin-bottom: 29px
         text-align: center
+        display: block
+        font-size: 20px
 
 .price-card
     text-align: center
@@ -34,8 +36,7 @@
         height: 260px
         display: block
     &__image
-        position: relative
-        
+        position: relative     
     &__image::before
         content: ''
         position: absolute
@@ -45,7 +46,7 @@
         top: 0px
         background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%)
         opacity: 0
-        transition: 0.2s
+        transition: 0.6s
             
     &__link
         font-weight: bold
@@ -66,6 +67,14 @@
             bottom: -4px
             transition: 0.4s
             z-index: -1
+
+@media ( max-width: 1200px )
+    .price-card
+        margin: auto
+        margin-bottom: 30px
+@media ( max-width: 768px )
+    .price__title
+        margin-bottom: 33px
 
     
             

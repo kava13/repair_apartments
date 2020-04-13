@@ -1,0 +1,41 @@
+.guarantees
+    padding-top: 53px
+    &__title
+        font-size: 30px
+        font-weight: 400
+        line-height: 45px
+        margin-top: 0px
+        +bold   
+        text-align: center
+        max-width: 642px
+        margin: auto
+        margin-bottom: 99px
+
+
+    &-block
+        display: flex
+        justify-content: space-around
+        &__item
+            flex-basis: 16%
+            text-align: center
+     
+
+        &__image
+            border: 20px solid #f5f5f5
+            background-color: #ffffff
+            margin-bottom: 41px
+            width: 219px
+
+@media ( max-width: 768px )
+    .guarantees
+        &-block
+            flex-direction: column
+            &__image
+                margin: auto
+                margin-bottom: 31px
+                width: 270px
+            &__text
+                max-width: 179px
+                margin: auto
+                margin-bottom: 44px
+                
