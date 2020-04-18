@@ -11,9 +11,13 @@
     flex-basis: 50%
     padding-top: 100px
     padding-left: 200px
+    &-white
+        flex-basis: 50%
+        background-color: #fff
+        height: 100%
     &-block
         display: flex
-        justify-content: flex-end
+        justify-content: space-between
     &__title
         font-size: 24px
         line-height: 1.4
@@ -25,8 +29,47 @@
             display: flex
             align-items: flex-start
             margin-bottom: 39px
+            > span
+                line-height: 19px
+                > a
+                    text-decoration: none
+                    color: black
         &__icon
             text-align: center
             width: 20px
             height: 20px
             margin-right: 23px
+
+@media ( max-width: 1200px  )
+    .contacts
+        padding-left: 70px
+    
+@media ( max-width: 768px  )
+    .contacts
+        padding-top: 67px
+        padding-left: 0
+        &-block
+            display: flex
+            justify-content: space-between
+            flex-direction: column-reverse
+            height: 1100px
+        &__title
+            margin-top: 67px
+            text-align: left
+            font-size: 18px
+            margin: auto
+            margin-bottom: 30px
+        &-list
+            padding-left: 0
+
+    .map
+        position: absolute
+        width: 100%
+        bottom: 0 
+        left: 0
+        top: auto
+
+    
+
+
+   

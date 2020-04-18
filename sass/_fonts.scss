@@ -18,6 +18,21 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'Museo Sans 900 Black';
+    src: url('../Fonts/MuseoSans/MuseoSansCyrl-900.eot');
+    src: url('../Fonts/MuseoSans/MuseoSansCyrl-900.eot?#iefix') format('embedded-opentype'),
+        url('../Fonts/MuseoSans/MuseoSansCyrl-900.woff') format('woff'),
+        url('../Fonts/MuseoSans/MuseoSansCyrl-900.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @mixin bold {
     font-family: 'Museo Sans 700 Bold';
+}
+
+@mixin black {
+    font-family: 'Museo Sans 900 Black';
+
 }

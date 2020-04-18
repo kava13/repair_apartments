@@ -65,10 +65,13 @@
         font-size: 16px
         margin-bottom: 45px
 
+
+
+
 @media ( max-width: 1200px )
     .brif
         &__form
-            padding-left: 30px
+            padding-left: 70px
     .interview
         padding-right: 30px
         &__title
@@ -90,12 +93,20 @@
             margin-bottom: 30px
 @media ( max-width: 768px )
     .brif
-        background-image: url('../img/brif-color-bg.jpg'), url('../img/brif-bg.jpg')
+        background-image: url('../img/brif-color-bg.jpg'), url('../img/brif/bg-768.jpg')
         background-position: top center, center bottom
         background-size: 100% 50%, cover
         background-repeat: repeat-x, no-repeat
         &-block
             flex-direction: column
+
+    .form
+        padding-left: 0px
+        &__title
+            margin-top: 61px
+
+    .interview-list__text
+        max-width: 186px
     
 
 
